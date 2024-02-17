@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO App</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-gradient-to-br from-red-500 to-pink-600 w-full h-screen flex justify-center items-center">
+        <div class=" px-6 py-6 bg-[#fff] rounded-lg">
+            <div class="flex gap-2 items-center">
+                <img class="w-10 h-10"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/003/529/153/small/business-to-do-list-flat-icon-modern-style-free-vector.jpg"
+                    alt="">
+                <h3 class="text-2xl font-bold text-gray-800">To-Do List</h3>
+            </div>
+            <div class="flex items-center mt-5 justify-center">
+                <input id="todo-input" class="rounded-full px-6 py-1.5 focus:outline-none bg-[#e6e6e6]" type="text">
+                <button onclick="clickBtn()" id="todo-btn"
+                    class=" -ml-10 px-6 py-1.5 rounded-full bg-orange-400 font-bold text-white">Add</button>
+            </div>
+
+            <div id="ul-container" class="mt-5">
+                <ul id="ul" class="f">
+
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
